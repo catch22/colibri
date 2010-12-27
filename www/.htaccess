@@ -1,0 +1,5 @@
+ExpiresActive On
+ExpiresByType text/html "now"
+<Files index.html>
+  Header append Cache-Control "max-age=0, no-cache, must-revalidate"
+</Files>

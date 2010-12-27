@@ -1,0 +1,67 @@
+#include "resources.h"
+#include <windows.h>
+#define BOOST_PP_STRINGIZE(text)       BOOST_PP_STRINGIZE_IMPL(text)
+#define BOOST_PP_STRINGIZE_IMPL(text)  #text
+
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+#pragma code_page(1252)
+
+VS_VERSION_INFO VERSIONINFO
+  FILEVERSION 0,COLIBRI_VERSION_NUMBER,0,0
+  PRODUCTVERSION 0,COLIBRI_VERSION_NUMBER,0,0
+  FILEFLAGSMASK VS_FF_PRERELEASE|VS_FF_DEBUG
+#if COLIBRI_VERSION_TYPE != 2
+#ifdef _DEBUG
+  FILEFLAGS VS_FF_PRERELEASE|VS_FF_DEBUG
+#else
+  FILEFLAGS VS_FF_PRERELEASE
+#endif
+#else
+#ifdef _DEBUG
+  FILEFLAGS VS_FF_DEBUG
+#else
+  FILEFLAGS 0
+#endif
+#endif
+  FILEOS VOS_NT_WINDOWS32
+  FILETYPE VFT_APP
+{
+  BLOCK "StringFileInfo"
+  {
+    BLOCK "040904b0"
+    {
+      VALUE "FileVersion",      "0, " BOOST_PP_STRINGIZE(COLIBRI_VERSION_NUMBER) ", 0, 0\0"
+      VALUE "FileDescription",  "Colibri\0"
+      VALUE "CompanyName",      "Michael Walter\0"
+      VALUE "Comments",         "\0"
+      VALUE "LegalCopyright",   "(c) Michael Walter, 2005-2007\0"
+      VALUE "LegalTrademarks",  "\0"
+      VALUE "InternalName",     "colibri\0"
+      VALUE "OriginalFilename", "colibri.exe\0"
+      VALUE "ProductName",      "Colibri -- Type Ahead\0"
+      VALUE "ProductVersion",   "0, " BOOST_PP_STRINGIZE(COLIBRI_VERSION_NUMBER) ", 0, 0\0"
+    }
+  }
+}
+
+IDI_COLIBRI ICON gui/colibri.ico
+IDI_COLIBRI_L ICON gui/colibri_l.ico
+IDI_COLIBRI_D ICON gui/colibri_d.ico
+IDI_COLIBRI_DL ICON gui/colibri_dl.ico
+IDI_PREFERENCES_GENERAL ICON gui/preferences_general.ico
+
+ContextMenu MENU
+{
+  POPUP "Popup"
+  {
+    MENUITEM "Open Colibri", IDC_COLIBRI_OPEN
+    MENUITEM "Enable Hotkey", IDC_COLIBRI_ENABLE_HOTKEY
+    MENUITEM "Show Preferences", IDC_COLIBRI_PREFERENCES
+    MENUITEM "Show Help", IDC_COLIBRI_HELP
+    MENUITEM "E&xit", IDC_COLIBRI_EXIT
+  }
+}
+
+Preferences_General DIALOGEX 0, 0, 252, 218 CAPTION "General"
+{
+}

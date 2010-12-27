@@ -1,0 +1,5 @@
+EXPORTS
+topaz_init
+topaz_enable_hotkey
+topaz_is_hotkey_enabled
+topaz_set_hotkey

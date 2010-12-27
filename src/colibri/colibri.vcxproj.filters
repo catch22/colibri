@@ -1,0 +1,250 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="core">
+      <UniqueIdentifier>{5d4c8d72-1076-48d8-aa89-657cdfeb0f10}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="db">
+      <UniqueIdentifier>{2721ead8-201b-4967-9654-954839ae6d5c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="gui">
+      <UniqueIdentifier>{c9b375fc-783d-42ac-be4b-72755c5f4579}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="plugins">
+      <UniqueIdentifier>{8267cd21-a3c4-402a-98b7-cb514d90576c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="libraries">
+      <UniqueIdentifier>{19c09d20-e491-4d72-bc0b-9117d537df8c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="libraries\net">
+      <UniqueIdentifier>{390a75e6-f7c6-483c-bb4a-a09cd605eeef}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="libraries\log">
+      <UniqueIdentifier>{72101b4e-c8ff-4d51-852a-6e1cc896c8a1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="libraries\core">
+      <UniqueIdentifier>{7f656952-8f85-4be1-9064-6ebeaa7e9140}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="libraries\db">
+      <UniqueIdentifier>{e02a6942-6e6b-41a1-8080-ba5c626b7bf4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="libraries\win32">
+      <UniqueIdentifier>{49433b90-261e-4325-890b-efd296f516b8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="%28doc%29">
+      <UniqueIdentifier>{728f4529-6c81-4bde-8270-8c1d2c18bfae}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="thirdparty">
+      <UniqueIdentifier>{4587a8e1-a1b0-4299-b044-6e3e33745fa2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="thirdparty\rapidxml">
+      <UniqueIdentifier>{14f2c351-7e41-49de-8bd6-61f7d0639a6b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="thirdparty\sqlite">
+      <UniqueIdentifier>{905ab8f7-4215-4fa2-8aa2-d3af54965c73}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="core\defs.h">
+      <Filter>core</Filter>
+    </ClInclude>
+    <ClInclude Include="core\version.h">
+      <Filter>core</Filter>
+    </ClInclude>
+    <ClInclude Include="db\db.h">
+      <Filter>db</Filter>
+    </ClInclude>
+    <ClInclude Include="db\db_controller.h">
+      <Filter>db</Filter>
+    </ClInclude>
+    <ClInclude Include="db\match.h">
+      <Filter>db</Filter>
+    </ClInclude>
+    <ClInclude Include="gui\controller.h">
+      <Filter>gui</Filter>
+    </ClInclude>
+    <ClInclude Include="gui\gui.h">
+      <Filter>gui</Filter>
+    </ClInclude>
+    <ClInclude Include="gui\splash_screen.h">
+      <Filter>gui</Filter>
+    </ClInclude>
+    <ClInclude Include="plugins\audio_plugin.h">
+      <Filter>plugins</Filter>
+    </ClInclude>
+    <ClInclude Include="plugins\colibri_plugin.h">
+      <Filter>plugins</Filter>
+    </ClInclude>
+    <ClInclude Include="plugins\control_panel_plugin.h">
+      <Filter>plugins</Filter>
+    </ClInclude>
+    <ClInclude Include="plugins\filesystem_plugin.h">
+      <Filter>plugins</Filter>
+    </ClInclude>
+    <ClInclude Include="plugins\plugin.h">
+      <Filter>plugins</Filter>
+    </ClInclude>
+    <ClInclude Include="plugins\search_engines_plugin.h">
+      <Filter>plugins</Filter>
+    </ClInclude>
+    <ClInclude Include="plugins\standard_actions_plugin.h">
+      <Filter>plugins</Filter>
+    </ClInclude>
+    <ClInclude Include="plugins\winamp.h">
+      <Filter>plugins</Filter>
+    </ClInclude>
+    <ClInclude Include="plugins\winamp_plugin.h">
+      <Filter>plugins</Filter>
+    </ClInclude>
+    <ClInclude Include="libraries\net\net.h">
+      <Filter>libraries\net</Filter>
+    </ClInclude>
+    <ClInclude Include="libraries\log\log.h">
+      <Filter>libraries\log</Filter>
+    </ClInclude>
+    <ClInclude Include="libraries\core\defs.h">
+      <Filter>libraries\core</Filter>
+    </ClInclude>
+    <ClInclude Include="libraries\core\dynlib.h">
+      <Filter>libraries\core</Filter>
+    </ClInclude>
+    <ClInclude Include="libraries\db\sqlite.h">
+      <Filter>libraries\db</Filter>
+    </ClInclude>
+    <ClInclude Include="libraries\win32\gfx.h">
+      <Filter>libraries\win32</Filter>
+    </ClInclude>
+    <ClInclude Include="libraries\win32\shell.h">
+      <Filter>libraries\win32</Filter>
+    </ClInclude>
+    <ClInclude Include="libraries\win32\win.h">
+      <Filter>libraries\win32</Filter>
+    </ClInclude>
+    <ClInclude Include="libraries\win32\win32.h">
+      <Filter>libraries\win32</Filter>
+    </ClInclude>
+    <ClInclude Include="resources.h" />
+    <ClInclude Include="thirdparty\rapidxml\rapidxml.hpp">
+      <Filter>thirdparty\rapidxml</Filter>
+    </ClInclude>
+    <ClInclude Include="thirdparty\rapidxml\rapidxml_iterators.hpp">
+      <Filter>thirdparty\rapidxml</Filter>
+    </ClInclude>
+    <ClInclude Include="thirdparty\rapidxml\rapidxml_print.hpp">
+      <Filter>thirdparty\rapidxml</Filter>
+    </ClInclude>
+    <ClInclude Include="thirdparty\rapidxml\rapidxml_utils.hpp">
+      <Filter>thirdparty\rapidxml</Filter>
+    </ClInclude>
+    <ClInclude Include="thirdparty\sqlite\sqlite3.h">
+      <Filter>thirdparty\sqlite</Filter>
+    </ClInclude>
+    <ClInclude Include="thirdparty\sqlite\sqlite3ext.h">
+      <Filter>thirdparty\sqlite</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="db\db.cpp">
+      <Filter>db</Filter>
+    </ClCompile>
+    <ClCompile Include="db\db_controller.cpp">
+      <Filter>db</Filter>
+    </ClCompile>
+    <ClCompile Include="db\match.cpp">
+      <Filter>db</Filter>
+    </ClCompile>
+    <ClCompile Include="gui\controller.cpp">
+      <Filter>gui</Filter>
+    </ClCompile>
+    <ClCompile Include="gui\gui.cpp">
+      <Filter>gui</Filter>
+    </ClCompile>
+    <ClCompile Include="gui\splash_screen.cpp">
+      <Filter>gui</Filter>
+    </ClCompile>
+    <ClCompile Include="plugins\audio_plugin.cpp">
+      <Filter>plugins</Filter>
+    </ClCompile>
+    <ClCompile Include="plugins\colibri_plugin.cpp">
+      <Filter>plugins</Filter>
+    </ClCompile>
+    <ClCompile Include="plugins\control_panel_plugin.cpp">
+      <Filter>plugins</Filter>
+    </ClCompile>
+    <ClCompile Include="plugins\filesystem_plugin.cpp">
+      <Filter>plugins</Filter>
+    </ClCompile>
+    <ClCompile Include="plugins\plugin.cpp">
+      <Filter>plugins</Filter>
+    </ClCompile>
+    <ClCompile Include="plugins\search_engines_plugin.cpp">
+      <Filter>plugins</Filter>
+    </ClCompile>
+    <ClCompile Include="plugins\standard_actions_plugin.cpp">
+      <Filter>plugins</Filter>
+    </ClCompile>
+    <ClCompile Include="plugins\winamp_plugin.cpp">
+      <Filter>plugins</Filter>
+    </ClCompile>
+    <ClCompile Include="libraries\net\net.cpp">
+      <Filter>libraries\net</Filter>
+    </ClCompile>
+    <ClCompile Include="libraries\log\log.cpp">
+      <Filter>libraries\log</Filter>
+    </ClCompile>
+    <ClCompile Include="libraries\core\defs.cpp">
+      <Filter>libraries\core</Filter>
+    </ClCompile>
+    <ClCompile Include="libraries\core\dynlib.cpp">
+      <Filter>libraries\core</Filter>
+    </ClCompile>
+    <ClCompile Include="libraries\db\sqlite.cpp">
+      <Filter>libraries\db</Filter>
+    </ClCompile>
+    <ClCompile Include="libraries\win32\gfx.cpp">
+      <Filter>libraries\win32</Filter>
+    </ClCompile>
+    <ClCompile Include="libraries\win32\shell.cpp">
+      <Filter>libraries\win32</Filter>
+    </ClCompile>
+    <ClCompile Include="libraries\win32\win.cpp">
+      <Filter>libraries\win32</Filter>
+    </ClCompile>
+    <ClCompile Include="main.cpp" />
+    <ClCompile Include="thirdparty\sqlite\sqlite3.c">
+      <Filter>thirdparty\sqlite</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="db\match.inl">
+      <Filter>db</Filter>
+    </None>
+    <None Include="gui\gui.inl">
+      <Filter>gui</Filter>
+    </None>
+    <None Include="libraries\core\dynlib.inl">
+      <Filter>libraries\core</Filter>
+    </None>
+    <None Include="..\..\doc\CHANGELOG.txt">
+      <Filter>%28doc%29</Filter>
+    </None>
+    <None Include="..\..\doc\CREDITS.txt">
+      <Filter>%28doc%29</Filter>
+    </None>
+    <None Include="..\..\doc\LICENSE-Colibri.txt">
+      <Filter>%28doc%29</Filter>
+    </None>
+    <None Include="..\..\doc\LICENSE-Crystal Clear.txt">
+      <Filter>%28doc%29</Filter>
+    </None>
+    <None Include="..\..\doc\LICENSE-GDI+.txt">
+      <Filter>%28doc%29</Filter>
+    </None>
+    <None Include="..\..\doc\TODO.txt">
+      <Filter>%28doc%29</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="main.rc" />
+  </ItemGroup>
+</Project>

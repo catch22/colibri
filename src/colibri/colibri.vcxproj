@@ -1,0 +1,184 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{D3EE79CB-EEFC-4E4D-9C1C-5E33CF15938F}</ProjectGuid>
+    <RootNamespace>Colibri</RootNamespace>
+    <Keyword>Win32Proj</Keyword>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>Unicode</CharacterSet>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.30319.1</_ProjectFileVersion>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(ProjectDir)/../../build/</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(ProjectDir)/../../build/debug/$(ProjectName)/</IntDir>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</LinkIncremental>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(ProjectDir)../../build/</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(ProjectDir)../../build/release/$(ProjectName)\</IntDir>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkIncremental>
+    <ExecutablePath Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(ExecutablePath)</ExecutablePath>
+    <IncludePath Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">C:\Program Files %28x86%29\boost\boost_1_44;$(IncludePath)</IncludePath>
+    <LibraryPath Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">C:\Program Files %28x86%29\boost\boost_1_44\lib;$(LibraryPath)</LibraryPath>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">colibri_d</TargetName>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">colibri</TargetName>
+    <ExecutablePath Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(ExecutablePath)</ExecutablePath>
+    <IncludePath Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">C:\Program Files %28x86%29\boost\boost_1_44;$(IncludePath)</IncludePath>
+    <LibraryPath Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">C:\Program Files %28x86%29\boost\boost_1_44\lib;$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <Optimization>Disabled</Optimization>
+      <AdditionalIncludeDirectories>..;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MinimalRebuild>true</MinimalRebuild>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
+      <DisableSpecificWarnings>4996;%(DisableSpecificWarnings)</DisableSpecificWarnings>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies>%(AdditionalDependencies)</AdditionalDependencies>
+      <OutputFile>$(ProjectDir)../../build/colibri_d.exe</OutputFile>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Windows</SubSystem>
+      <RandomizedBaseAddress>false</RandomizedBaseAddress>
+      <DataExecutionPrevention>
+      </DataExecutionPrevention>
+      <TargetMachine>MachineX86</TargetMachine>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>..;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <DisableSpecificWarnings>4996;%(DisableSpecificWarnings)</DisableSpecificWarnings>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies>%(AdditionalDependencies)</AdditionalDependencies>
+      <OutputFile>$(ProjectDir)../../build/colibri.exe</OutputFile>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Windows</SubSystem>
+      <OptimizeReferences>true</OptimizeReferences>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <RandomizedBaseAddress>false</RandomizedBaseAddress>
+      <DataExecutionPrevention>
+      </DataExecutionPrevention>
+      <TargetMachine>MachineX86</TargetMachine>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClInclude Include="core\defs.h" />
+    <ClInclude Include="core\version.h" />
+    <ClInclude Include="db\db.h" />
+    <ClInclude Include="db\db_controller.h" />
+    <ClInclude Include="db\match.h" />
+    <ClInclude Include="gui\controller.h" />
+    <ClInclude Include="gui\gui.h" />
+    <ClInclude Include="gui\splash_screen.h" />
+    <ClInclude Include="plugins\audio_plugin.h" />
+    <ClInclude Include="plugins\colibri_plugin.h" />
+    <ClInclude Include="plugins\control_panel_plugin.h" />
+    <ClInclude Include="plugins\filesystem_plugin.h" />
+    <ClInclude Include="plugins\plugin.h" />
+    <ClInclude Include="plugins\search_engines_plugin.h" />
+    <ClInclude Include="plugins\standard_actions_plugin.h" />
+    <ClInclude Include="plugins\winamp.h" />
+    <ClInclude Include="plugins\winamp_plugin.h" />
+    <ClInclude Include="libraries\net\net.h" />
+    <ClInclude Include="libraries\log\log.h" />
+    <ClInclude Include="libraries\core\defs.h" />
+    <ClInclude Include="libraries\core\dynlib.h" />
+    <ClInclude Include="libraries\db\sqlite.h" />
+    <ClInclude Include="libraries\win32\gfx.h" />
+    <ClInclude Include="libraries\win32\shell.h" />
+    <ClInclude Include="libraries\win32\win.h" />
+    <ClInclude Include="libraries\win32\win32.h" />
+    <ClInclude Include="resources.h" />
+    <ClInclude Include="thirdparty\rapidxml\rapidxml.hpp" />
+    <ClInclude Include="thirdparty\rapidxml\rapidxml_iterators.hpp" />
+    <ClInclude Include="thirdparty\rapidxml\rapidxml_print.hpp" />
+    <ClInclude Include="thirdparty\rapidxml\rapidxml_utils.hpp" />
+    <ClInclude Include="thirdparty\sqlite\sqlite3.h" />
+    <ClInclude Include="thirdparty\sqlite\sqlite3ext.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="db\db.cpp" />
+    <ClCompile Include="db\db_controller.cpp" />
+    <ClCompile Include="db\match.cpp" />
+    <ClCompile Include="gui\controller.cpp" />
+    <ClCompile Include="gui\gui.cpp" />
+    <ClCompile Include="gui\splash_screen.cpp" />
+    <ClCompile Include="plugins\audio_plugin.cpp" />
+    <ClCompile Include="plugins\colibri_plugin.cpp" />
+    <ClCompile Include="plugins\control_panel_plugin.cpp" />
+    <ClCompile Include="plugins\filesystem_plugin.cpp" />
+    <ClCompile Include="plugins\plugin.cpp" />
+    <ClCompile Include="plugins\search_engines_plugin.cpp" />
+    <ClCompile Include="plugins\standard_actions_plugin.cpp" />
+    <ClCompile Include="plugins\winamp_plugin.cpp" />
+    <ClCompile Include="libraries\net\net.cpp" />
+    <ClCompile Include="libraries\log\log.cpp" />
+    <ClCompile Include="libraries\core\defs.cpp" />
+    <ClCompile Include="libraries\core\dynlib.cpp" />
+    <ClCompile Include="libraries\db\sqlite.cpp" />
+    <ClCompile Include="libraries\win32\gfx.cpp" />
+    <ClCompile Include="libraries\win32\shell.cpp" />
+    <ClCompile Include="libraries\win32\win.cpp" />
+    <ClCompile Include="main.cpp" />
+    <ClCompile Include="thirdparty\sqlite\sqlite3.c" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="db\match.inl" />
+    <None Include="gui\gui.inl" />
+    <None Include="libraries\core\dynlib.inl" />
+    <None Include="..\..\doc\CHANGELOG.txt" />
+    <None Include="..\..\doc\CREDITS.txt" />
+    <None Include="..\..\doc\LICENSE-Colibri.txt" />
+    <None Include="..\..\doc\LICENSE-Crystal Clear.txt" />
+    <None Include="..\..\doc\LICENSE-GDI+.txt" />
+    <None Include="..\..\doc\TODO.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="main.rc" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

@@ -1,0 +1,77 @@
+body
+{
+  font-family: Tahoma;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  width: 95%;
+  height: 100%;
+  margin: auto;
+  color: #000;
+  background-color: #fff;
+}
+
+hr
+{
+  border: 0px;
+  height: 1px;
+  color: #aaa;
+  background-color: #aaa;
+  width: 75%;
+  margin: 15px;
+  margin-bottom: 20px;
+}
+
+/*logo*/
+div.logo img
+{
+  float: left;
+}
+div.logo h1
+{
+  font-weight: normal;
+}
+div.logo h2
+{
+  font-weight: normal;
+}
+
+/* feature s*/
+div.features div.tryit
+{
+  float: left;
+  width: 350px;
+  border: 1px solid;
+  padding: 10px;
+  margin: 10px;
+  margin-top: 10px;
+  margin-right: 15px;
+  background-color: #f0f0f0;
+  text-align: center;
+}
+
+/* screenshots */
+div.screenshot img
+{
+  border: 1px solid #aaa;
+  float: left;
+  margin-right: 20px;
+}
+div.screenshot h1
+{
+  font-size: 16px;
+  font-weight: bold;
+  color: #333;
+}
+
+/* copyright */
+div.copy
+{
+  clear: both;
+  text-align: center;
+  font-size: 11px;
+  color: #111;
+  padding-top: 12px
+}

@@ -1,0 +1,58 @@
+--- 2010-12-26: (trunk)
+
+- Fix: Colibri now compiles with Microsoft Visual C++ 2010 and Boost 1.45.0.
+
+--- 2007-12-14: (trunk)
+
+- Feature: Now loading icons from current theme (defaulting to "default" theme).
+
+- Change: Changed theme/icon naming scheme (lower-case only etc).
+- Change: Moved update check to Colibri plugin.
+- Change: Update check now queries Atom feed.
+- Change: Renamed "Show updated notifications" setting to "Check for updates"
+
+- Fix: Fixed Colibri not running from multiple user sessions in parallel (would get "Unable to create 'Colibri' mutex" error).
+
+
+--- 2006-12-20: (trunk)
+
+- Feature: Added experimental (soon to be optional) dimming feature.
+
+
+--- 2006-11-23: (build 17)
+
+- Feature: Added "Show update notification" setting.
+
+- Fix: Fixed startup crash when control panel applet returned 0 on CPL_INIT.
+- Fix: Now storing monitor device name instead of numeric index.
+- Fix: (Hopefully) fixed "Couldn't load devmgr.dll" error message.
+
+
+--- 2006-11-11: (build 16)
+
+- Change: Pasting with <SHIFT+INSERT> is now possible.
+
+- Fix: Fixed new-style control panel applet indexing (e.g. "Internet Options" and "Bluetooth Devices").
+- Fix: Now launching proper applet when multiple applets are stored in a single .cpl binary (e.g. "Keyboard").
+- Fix: Fixed dropdown list clipping.
+- Fix: Dropdown window wasn't destroyed when restarting Colibri.
+- Fix: "Launch" was displayed with an arrow overlay.
+- Fix: Now underlining menu controller matches (e.g. in the Colibri menu).
+
+
+--- 2006-08-29: (build 15)
+
+- Feature: Implemented Windows 2000 support.
+- Feature: Added basic Winamp plugin.
+- Feature: Added "Default" font for customized skinning.
+- Feature: Now displaying little arrow for items without a filesystem path (to indicate possibility of unusual actions).
+- Feature: Added matching algorithm to menus (such as "Colibri -> Preferences").
+
+- Change: <ESCAPE> key now closes all bricks.
+- Change: <RIGHT>/<LEFT> are now aliases for <TAB>/<SHIFT+TAB>
+- Change: Added "Show Preferences" to tray icon contex menu.
+
+- Fix: Fixed memory leak in database backend.
+- Fix: Improved GUI hiding speed.
+- Fix: Registering tray icon failed on very slow computer when taskbar wasn't ready. Now retrying every second for one minute after the first failure.
+- Fix: Fixed error when no display driver is installed (to be tested).

@@ -1,0 +1,155 @@
+==============================================================================
+  TODO
+==============================================================================
+
+------------------------------------------------------------------------------
+  Code Design
+------------------------------------------------------------------------------
+- consider managing plugins and routing actions somewhere else than in the
+  database class.
+- review all throw_error calls and change them to warnings where it makes sense.
+- review manual memory allocation and replace by smart pointers / RAII arrays.
+- add distinction between statement and result set (in utils/db/sqlite).
+- right now, controllers get destructed during trigger_action execution when
+  get_gui().hide_gui() is called.
+- integrate "libraries"
+
+------------------------------------------------------------------------------
+  Core
+------------------------------------------------------------------------------
+- add debug helpers (log window, dump callstack on exceptions + crashes, ...)
+
+------------------------------------------------------------------------------
+  Database
+------------------------------------------------------------------------------
+- BUG: fix SQL query for item priorization (should use the
+  'last_invokation_count' corresponding to the chosen MAX(history_score)).
+- BUG: maybe use MRU instead of LRU
+- BUG: provide advanced indexing options (ing frequency etc.), expose in
+  the preferences dialog, get rid of "Rehash" at startup!
+- index desktop by default.
+- ability to rename and supress database items, expose in the preferences
+  dialog or as standard actions.
+- define custom hotkeys for items.
+
+------------------------------------------------------------------------------
+  GUI
+------------------------------------------------------------------------------
+- BUG: store monitor name instead of index.
+- BUG: expose bold/italic font in Theme.ini.
+- BUG: fix distance between bricks and between last brick and dropdown differing (expose in Theme.ini).
+- BUG: fix Colibri staying popped up when losing focus.
+- BUG: themes should define "Enter search term" text.
+- BUG: credits should include theme credits, and exclude "..and splash screen.."
+- BUG: disable hotkey when another application enters fullscreen mode.
+- BUG: allow shift-space hotkey.
+- BUG: http://colibri.leetspeak.org/community/viewtopic.php?id=139
+http://colibri.leetspeak.org/community/viewtopic.php?id=136
+- double-hitting an ordinary key as a hotkey.
+- option to hide tray icon.
+- menu control should support radio buttons (e.g. for selecting the current
+  theme).
+- implement ability to drag Colibri window around the screen.
+- autocompletion for text bricks.
+- packaged themes.
+- drag&drop items onto Colibri.
+- rewrite theme code.
+- apple-style interface (http://www.glennwolsey.com/wp-content/uploads/2006/10/blog_overflow_415x241.shkl.jpg)
+- add option to configure dropdown-popup delay.
+- add option to erase input text after a delay.
+- open enclosing folder when pressing shift-enter.
+- press hotkey twice to hide Colibri.
+- BUG: do not depend on tray (e.g. 
+
+------------------------------------------------------------------------------
+  Web page
+------------------------------------------------------------------------------
+- add 'About' page.
+- add 'Help' page (with videos).
+
+------------------------------------------------------------------------------
+  Colibri plugin
+------------------------------------------------------------------------------
+- add "Preferences" (shows preferences for all plugins + database explorer)
+- only update to prerelease versions if user desires so (but even from release versions!)
+
+------------------------------------------------------------------------------
+  File system plugin
+------------------------------------------------------------------------------
+- BUG: remove duplicates when indexing from multiple sources (maybe index
+  real file, but that won't work for all shortcuts!)
+- BUG: use '#magic' instead of expanding magic paths at first startup.
+- index desktop.
+- no path in the description (rather use shortcut description if available)
+- provide filters (e.g. only index *.mp3, ignore items containing "Uninstall")
+- provide better meta information (e.g. use ID3 tag for MP3s)
+- index drives and network shares
+
+------------------------------------------------------------------------------
+  Search engine plugin
+------------------------------------------------------------------------------
+- use proper flag icons for dict.leo.org
+- optionally show results inside Colibri
+- use quicksilver-list for defaults
+
+------------------------------------------------------------------------------
+  Winamp Plugin
+------------------------------------------------------------------------------
+- add "Play in Winamp" action
+- provide option whether to close Colibri when Play/Stop/.. was selected
+- enable playlist browsing (maybe also show title of current/next/previous
+  song in description of play/next/previus song items).
+- maybe take over filesystem winamp item?
+
+------------------------------------------------------------------------------
+ Control Panel Plugin
+------------------------------------------------------------------------------
+- BUG: devmgr.dll bug
+
+------------------------------------------------------------------------------
+ Standard Actions Plugin
+------------------------------------------------------------------------------
+- BUG: launch() should always activate the launched application's window.
+- "run as ..."
+- "launch on ..." (monitor)
+- "open with ..." (shell)
+- "send to ..." (shell)
+- "run" (as a global item, like Start->Run...)
+
+------------------------------------------------------------------------------
+  Setup
+------------------------------------------------------------------------------
+- BUG: installing to D:\Colibri won't work?
+- get rid of manual specification of file names in setup script
+- add logo to Colibri folder (Desktop.ini)
+
+------------------------------------------------------------------------------
+  New Features
+------------------------------------------------------------------------------
+SOON:
+- preferences panel
+- iTunes integration
+- bookmarks:
+  - del.icio.us: by giving RSS URLs, maybe also search your del.icio.us bookmarks and/or browse them by tags
+  - IE: Favorites folder
+  - Firefox: bookmarks.html
+  - "Bookmark in ..." action for URLs
+- distinguish between development, beta and production releases (and have
+  a unified updater)
+- built-in updater (which also shows new features, can be disabled, etc.)
+
+LATER:
+- allow for text actions (such as "I'm feeling lucky" Google search). this
+  will be exposed in the main brick like that:
+    <,> <h> <e> <l> <l> <o> [<enter> | <tab> action <enter>]
+  or
+    http://colibri.leetspeak.org/community/viewtopic.php?id=14
+- localization
+- notifications (annoying eye candy a la QuickSilver, e.g. for new iTunes songs)
+- multiple selection? (might be useful for file system)
+- plugin API
+- perform search in the background
+- task manager
+- prettier UI when displaying exceptions
+- index printers
+- recycle bin

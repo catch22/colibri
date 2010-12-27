@@ -1,0 +1,26 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual C++ Express 2010
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "colibri", "colibri\colibri.vcxproj", "{D3EE79CB-EEFC-4E4D-9C1C-5E33CF15938F}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "hotkey_agent", "hotkey_agent\hotkey_agent.vcxproj", "{F0A41A73-4C22-45E7-B312-650E0783A04E}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Win32 = Debug|Win32
+		Release|Win32 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{D3EE79CB-EEFC-4E4D-9C1C-5E33CF15938F}.Debug|Win32.ActiveCfg = Debug|Win32
+		{D3EE79CB-EEFC-4E4D-9C1C-5E33CF15938F}.Debug|Win32.Build.0 = Debug|Win32
+		{D3EE79CB-EEFC-4E4D-9C1C-5E33CF15938F}.Release|Win32.ActiveCfg = Release|Win32
+		{D3EE79CB-EEFC-4E4D-9C1C-5E33CF15938F}.Release|Win32.Build.0 = Release|Win32
+		{F0A41A73-4C22-45E7-B312-650E0783A04E}.Debug|Win32.ActiveCfg = Debug|Win32
+		{F0A41A73-4C22-45E7-B312-650E0783A04E}.Debug|Win32.Build.0 = Debug|Win32
+		{F0A41A73-4C22-45E7-B312-650E0783A04E}.Release|Win32.ActiveCfg = Release|Win32
+		{F0A41A73-4C22-45E7-B312-650E0783A04E}.Release|Win32.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
