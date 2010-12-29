@@ -1,13 +1,13 @@
 COLIBRI CREDITS
 
-Copyright (c) 2005 Michael Walter.
+Copyright (c) 2005-2011 Michael Walter.
 
 Colibri is designed and implemented by Michael Walter (michael.walter@gmail.com).
 The Colibri logo and splash screen are designed by Tobias Ehls (tobias.ehls@gmail.com).
 
 The following people have contributed code to Colibri:
 
-* Torsten Schröder (explodus@gmx.de)
+* Torsten SchrÃ¶der (explodus@gmx.de)
 
 Colibri is in part based on the following software:
 
