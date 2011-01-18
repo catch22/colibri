@@ -1,59 +1,19 @@
-Please read the following information carefully before installing and using
-Colibri ("Software").
+Copyright (c) 2005-2011 Michael Walter
 
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
 
-LICENSE
+The above copyright notice and this permission notice shall be included in
+all copies or substantial portions of the Software.
 
-The Software is distributed as Freeware. You may use this software on any
-number of computers for as long as you like. The software is NOT Public
-Domain software. You are allowed to freely distribute of the software, but
-Michael Walter ("Licensor") retains ownership and copyright of the software
-in its entirety. You may use and/or distribute the software only subject to
-the following conditions:
-
-* You may only use the software as intended by the Licensor.
-* You may not use the software to support any third party product without
-  the express written consent of the Licensor.
-* You may not modify the program or documentation files in any way.
-* You must include all the files that were in the original distribution.
-* You may not reverse engineer, decompile, or otherwise reduce the Software
-  to a human perceivable form.
-* You may not sell the software or charge a distribution fee, except to
-  recover the media costs.
-* You understand and agree with this license and with the disclaimer of
-  warranty and the limitation of liability printed below.
-* The software may be bundled and distributed together with other software
-  products but the same conditions apply.
-
-
-DISCLAIMER OF WARRANTY
-
-The software and related documentation are provided "as is", without
-warranty of any kind. The Licensor disclaims all warranties, express
-or implied, including, but not limited to, the implied warranties of design,
-merchantability, fitness for a particular purpose.
-The Licensor does not warrant that the functions contained in the software
-or documentation will meet your requirements, or that the operation of the
-software will be error-free, complete, or that defects in the software or
-documentation will be corrected.
-
-
-LIMITATION OF LIABILITY
-
-Under no circumstances shall the Licensor be liable for any lost revenue
-or profits or any incidental, indirect, special, or consequential damages
-that result from the use or inability to use the Software or related products
-or documentation, even if the Licensor has been advised of the possibility
-of such damages.
-
-Some states do not allow the limitation or exclusion of liability for incidental
-or consequential damages so the above limitation or exclusion may not apply to
-you. In no event shall the Licensor's total liability to you for all damages,
-losses, and causes of action, whether in contract, tort or otherwise, exceed
-the amount paid by you for the software.
-
-
-COPYRIGHT
-
-Copyright (c) 2005 by Michael Walter.
-All Rights Reserved. 
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
+THE SOFTWARE.
